@@ -16,9 +16,9 @@ public class Employee {
     private String firstName;
 
     @Column(name = "last_Name")
-    @NotNull(message = "is required")
+    @NotNull(message = "Last Name is required")
     //TODO expand validation
-    @Size(min=1, message = "This field is required")
+    @Size(min=3, max = 10,  message = "Last name must have from 3 to 10 characters")
     private String lastName;
     @Column(name = "email")
     private String email;
