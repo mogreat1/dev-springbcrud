@@ -57,8 +57,6 @@ public class EmployeeController {
     @PutMapping("/employees")
     public Employee updateEmployee(@RequestBody Employee employee){
 
-        // TODO add error handling
-
         employeeService.update(employee);
         return employee;
 
